@@ -1,7 +1,7 @@
 credentials.json
 token.json
 env.py
-.idea
+.idea/
 extracted_events.json
 # Byte-compiled / optimized / DLL files
 __pycache__/

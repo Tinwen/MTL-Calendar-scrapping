@@ -13,7 +13,7 @@ from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
-from env import TOKEN_FILE, SCOPES, CREDENTIALS_FILE, EVENTS_FILE
+from env import TOKEN_FILE, SCOPES, CREDENTIALS_FILE, OUTPUT_FILE
 
 
 def get_calendar_service():
@@ -96,7 +96,7 @@ def parse_date(value):
 
 def main():
     # Load events
-    with open(EVENTS_FILE, "r", encoding="utf-8") as f:
+    with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
         events = json.load(f)
 
     # Group by _permanent_identifier

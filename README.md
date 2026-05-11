@@ -60,7 +60,6 @@ Edit `env.py` to configure:
 ```python
 URL = "https://xgnqmfepvy-dsn.algolia.net/1/indexes/*/queries"
 OUTPUT_FILE = "extracted_events.json"
-EVENTS_FILE = "extracted_events.json"
 TOKEN_FILE = "token.json"
 CREDENTIALS_FILE = "credentials.json"
 SCOPES = ["https://www.googleapis.com/auth/calendar"]
@@ -156,10 +155,6 @@ First run will prompt for Google authentication. This will:
 2. **Google authentication fails** - Delete `token.json` and re-run
 3. **No events imported** - Verify `extracted_events.json` exists and contains valid data
 4. **Events not showing in calendar** - Check calendar timezone (set to "America/Montreal")
-
-## License
-
-[Add your license here]
 
 ## Author
 
